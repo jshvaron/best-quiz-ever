@@ -66,7 +66,7 @@ showQ3.addEventListener("click", function(){
    let q1Hide = document.querySelector('.question-box-1');
      q1Hide.style.display = "none";
    let q2Hide = document.querySelector('.question-box-2');
-   q2Hide.style.display = "none";
+      q2Hide.style.display = "none";
 });
 
 // hides question 1,2,3 on click and displays question 3
@@ -78,9 +78,9 @@ showQ4.addEventListener("click", function(){
    let q1Hide = document.querySelector('.question-box-1');
      q1Hide.style.display = "none";
    let q2Hide = document.querySelector('.question-box-2');
-   q2Hide.style.display = "none";
+      q2Hide.style.display = "none";
    let q3Hide = document.querySelector('.question-box-3');
-   q3Hide.style.display = "none";
+      q3Hide.style.display = "none";
 });
 
 // hides question 1,2,3,4 on click and displays Done and highScores box
@@ -110,6 +110,13 @@ showScores.addEventListener("click", function(){
    scoreHide.style.display = "block";
 });
 
+// const highscoreName = document.querySelector('#hsName');
+// const resultsCard = document.querySelector('#results');
+
+// highscoreName.addEventListener('input', function () {
+//    document.getElementById('results').innerHTML+= 
+//    `<p>${resultsCard}</p>`
+// });
 
 
 
