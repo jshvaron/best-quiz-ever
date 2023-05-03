@@ -9,56 +9,76 @@
 </head>
 <body>
     <header>
-        <h3> <a href="XXXX">View highscores</a> </h3>
-        <h3 id="countdown">Timer: 10</h3>
+        <h3 id="countdown">Timer: 30</h3>
     </header>
     
 
     <div class="container">
-        <h1 class="question-box" id="quiz-header">
+        <h1 class="title-box" id="quiz-header">
             Best Quiz Ever
         </h1>
 
-        <article class="question-box">
+        <menu class="menu-box" data-page="menu">
             <h2>Menu</h2>
-            <button id="startbtn">Start Quiz</button>
-        </article>
+            <div class="menu-btns">
+                <button id="startbtn" >Start Quiz</button>
+                <button class="highscorebtn">View highscores</a></button>
+            </div>
+        </menu>
 
 
-        <article class="question-box" id="hidden">
+        <article  class="question-box-1"  data-page="question-one">
             <h2>Question 1:</h2>
             <p>What is JavaScript?</p>
             <button>option 1</button>
             <button>option 2</button>
             <button>option 3</button>
             <button>option 4</button>
+            <button class="showQ2">Next Question</button>
+
         </article>
 
-        <article class="question-box">
-            <h2>Question 2</h2>
-            <p>Which of the following are a variable:</p>
+        <article  class="question-box-2"  data-page="question-two">
+            <h2 id="example">Question 2</h2>
+            <p>Which of the following is a variable:</p>
             <button>option 1</button>
             <button>option 2</button>
             <button>option 3</button>
             <button>option 4</button>
+            <button class="showQ3">Next Question</button>
+
         </article>
 
-        <article class="question-box">
+        <article class="question-box-3"  data-page="question-three">
             <h2>Question 3:</h2>
             <p>Which of the following is the correct starting format for a or loop:</p>
             <button>option 1</button>
             <button>option 2</button>
             <button>option 3</button>
             <button>option 4</button>
+            <button class="showQ4">Next Question</button>
+
         </article>
 
-        <article class="question-box">
+        <article  class="question-box-4" id="doneCard" data-page="question-four">
             <h2>Question 4:</h2>
             <p>What is an object?</p>
             <button>option 1</button>
             <button>option 2</button>
             <button>option 3</button>
             <button>option 4</button>
+            <button class="showDone">Next Step</button>
+
+        </article>
+        
+        <article  class="done-box" class="doneHide"  data-page="question-four">
+            <h2>All Done!</h2>
+            <p>Enter your initials to post your highscore!</p>
+            <input>
+        </article>
+        <article  class="scores-box" class="scoresHide"  data-page="question-four">
+            <h2>HIGHSCORES</h2>
+            <p></p>
         </article>
 
     </div>
